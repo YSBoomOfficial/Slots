@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D30E54E9259CF1F7007BB378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E54E8259CF1F7007BB378 /* CardView.swift */; };
-		D32A5C4D24E96C1E00827EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A5C4C24E96C1E00827EE1 /* AppDelegate.swift */; };
-		D32A5C4F24E96C1E00827EE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A5C4E24E96C1E00827EE1 /* SceneDelegate.swift */; };
 		D32A5C5124E96C1E00827EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A5C5024E96C1E00827EE1 /* ContentView.swift */; };
 		D32A5C5324E96C1F00827EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32A5C5224E96C1F00827EE1 /* Assets.xcassets */; };
 		D32A5C5624E96C1F00827EE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32A5C5524E96C1F00827EE1 /* Preview Assets.xcassets */; };
@@ -20,13 +18,17 @@
 		D35F43582705C88100DD1335 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F43572705C88100DD1335 /* CreditsView.swift */; };
 		D35F435A2705C95900DD1335 /* CardsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F43592705C95900DD1335 /* CardsGroupView.swift */; };
 		D35F435C2705CC8C00DD1335 /* SpinButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F435B2705CC8C00DD1335 /* SpinButtons.swift */; };
+		D3C0D55627A6401300D5C39D /* Get Multiple Matches.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C0D55127A6401300D5C39D /* Get Multiple Matches.png */; };
+		D3C0D55727A6401300D5C39D /* Spin All.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C0D55227A6401300D5C39D /* Spin All.png */; };
+		D3C0D55827A6401300D5C39D /* Get Match.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C0D55327A6401300D5C39D /* Get Match.png */; };
+		D3C0D55927A6401300D5C39D /* First Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C0D55427A6401300D5C39D /* First Launch.png */; };
+		D3C0D55A27A6401300D5C39D /* Spin Mid.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C0D55527A6401300D5C39D /* Spin Mid.png */; };
+		D3C0D55C27A6404000D5C39D /* SlotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0D55B27A6404000D5C39D /* SlotsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D30E54E8259CF1F7007BB378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D32A5C4924E96C1E00827EE1 /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D32A5C4C24E96C1E00827EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D32A5C4E24E96C1E00827EE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D32A5C5024E96C1E00827EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D32A5C5224E96C1F00827EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32A5C5524E96C1F00827EE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -38,6 +40,12 @@
 		D35F43572705C88100DD1335 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		D35F43592705C95900DD1335 /* CardsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGroupView.swift; sourceTree = "<group>"; };
 		D35F435B2705CC8C00DD1335 /* SpinButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinButtons.swift; sourceTree = "<group>"; };
+		D3C0D55127A6401300D5C39D /* Get Multiple Matches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Get Multiple Matches.png"; sourceTree = "<group>"; };
+		D3C0D55227A6401300D5C39D /* Spin All.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spin All.png"; sourceTree = "<group>"; };
+		D3C0D55327A6401300D5C39D /* Get Match.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Get Match.png"; sourceTree = "<group>"; };
+		D3C0D55427A6401300D5C39D /* First Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "First Launch.png"; sourceTree = "<group>"; };
+		D3C0D55527A6401300D5C39D /* Spin Mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spin Mid.png"; sourceTree = "<group>"; };
+		D3C0D55B27A6404000D5C39D /* SlotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +78,11 @@
 		D32A5C4B24E96C1E00827EE1 /* Slots */ = {
 			isa = PBXGroup;
 			children = (
-				D32A5C4C24E96C1E00827EE1 /* AppDelegate.swift */,
-				D32A5C4E24E96C1E00827EE1 /* SceneDelegate.swift */,
+				D3C0D55B27A6404000D5C39D /* SlotsApp.swift */,
 				D35F43552705C5F000DD1335 /* ViewModel+Constt.swift */,
 				D35F434F2705C2CE00DD1335 /* Views */,
 				D32A5C5224E96C1F00827EE1 /* Assets.xcassets */,
+				D3C0D55027A63FF800D5C39D /* App Screenshots */,
 				D32A5C5724E96C1F00827EE1 /* LaunchScreen.storyboard */,
 				D32A5C5A24E96C1F00827EE1 /* Info.plist */,
 				D32A5C5424E96C1F00827EE1 /* Preview Content */,
@@ -110,6 +118,18 @@
 				D35F435B2705CC8C00DD1335 /* SpinButtons.swift */,
 			);
 			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+		D3C0D55027A63FF800D5C39D /* App Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0D55427A6401300D5C39D /* First Launch.png */,
+				D3C0D55327A6401300D5C39D /* Get Match.png */,
+				D3C0D55127A6401300D5C39D /* Get Multiple Matches.png */,
+				D3C0D55227A6401300D5C39D /* Spin All.png */,
+				D3C0D55527A6401300D5C39D /* Spin Mid.png */,
+			);
+			path = "App Screenshots";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0D55927A6401300D5C39D /* First Launch.png in Resources */,
+				D3C0D55627A6401300D5C39D /* Get Multiple Matches.png in Resources */,
+				D3C0D55727A6401300D5C39D /* Spin All.png in Resources */,
+				D3C0D55A27A6401300D5C39D /* Spin Mid.png in Resources */,
 				D32A5C5924E96C1F00827EE1 /* LaunchScreen.storyboard in Resources */,
+				D3C0D55827A6401300D5C39D /* Get Match.png in Resources */,
 				D32A5C5624E96C1F00827EE1 /* Preview Assets.xcassets in Resources */,
 				D32A5C5324E96C1F00827EE1 /* Assets.xcassets in Resources */,
 			);
@@ -183,12 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32A5C4D24E96C1E00827EE1 /* AppDelegate.swift in Sources */,
-				D32A5C4F24E96C1E00827EE1 /* SceneDelegate.swift in Sources */,
 				D30E54E9259CF1F7007BB378 /* CardView.swift in Sources */,
 				D35F435C2705CC8C00DD1335 /* SpinButtons.swift in Sources */,
 				D35F43522705C40200DD1335 /* BGView.swift in Sources */,
 				D32A5C5124E96C1E00827EE1 /* ContentView.swift in Sources */,
+				D3C0D55C27A6404000D5C39D /* SlotsApp.swift in Sources */,
 				D35F435A2705C95900DD1335 /* CardsGroupView.swift in Sources */,
 				D35F43542705C45400DD1335 /* TitleView.swift in Sources */,
 				D35F43582705C88100DD1335 /* CreditsView.swift in Sources */,
@@ -261,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -316,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
