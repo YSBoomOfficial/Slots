@@ -12,11 +12,11 @@ struct BGView: View {
 		ZStack {
 			Rectangle()
 				.foregroundColor(Color(red: 32/255, green: 32/255, blue: 32/255))
-				.edgesIgnoringSafeArea(.all)
+				.ignoresSafeArea()
 			Rectangle()
 				.foregroundColor(Color(red: 64/255, green: 64/255, blue: 64/255))
-				.rotationEffect(Angle(degrees: 45))
-				.edgesIgnoringSafeArea(.all)
+				.rotationEffect(.degrees(45))
+				.ignoresSafeArea()
 		}
     }
 }

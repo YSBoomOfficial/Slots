@@ -11,33 +11,21 @@ struct TitleView: View {
 	var body: some View {
 		HStack {
 			Spacer()
-			ZStack {
-				Image(systemName: "star.fill")
-					.foregroundColor(.black)
-					.scaleEffect(2.5)
-				Image(systemName: "star.fill").foregroundColor(.white)
-					.scaleEffect(2)
-			}
-			Text("Slots")
-				.foregroundColor(.white)
-				.fontWeight(.black)
-				.font(.largeTitle)
-				.frame(width: 150, height: 75, alignment: .center)
-			ZStack {
-				Image(systemName: "star.fill")
-					.foregroundColor(.black)
-					.scaleEffect(2.5)
-				Image(systemName: "star.fill").foregroundColor(.white)
-					.scaleEffect(2)
-			}
+			Image(systemName: "star")
+			Text("Slots").padding()
+			Image(systemName: "star")
 			Spacer()
 		}
+		.font(.largeTitle.weight(.black))
+		.foregroundColor(.white)
 	}
 }
 
 struct TitleView_Previews: PreviewProvider {
 	static var previews: some View {
 		TitleView()
-			.background(Color.gray)
+			.previewLayout(.sizeThatFits)
+			.padding()
+			.background(Color.black)
 	}
 }

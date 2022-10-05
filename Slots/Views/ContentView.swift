@@ -38,9 +38,8 @@ struct ContentView: View {
 				Spacer()
 			}
 		}
+		.animation(.easeOut)
 	}
-	
-	
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -13,9 +13,12 @@ struct CreditsView: View {
 	
     var body: some View {
 		Text("Credits: \(vm.credits)")
-			.padding(.all, 10)
-			.background(Color.white.opacity(0.5))
+			.padding(10)
+			.background(vm.win ? Color.green.opacity(0.5) : Color.white.opacity(0.5))
+			.animation(.none)
 			.cornerRadius(20)
+			.scaleEffect(vm.win ? 1.2 : 1)
+			.animation(.spring(response: 0.7, dampingFraction: 0.5))
     }
 }
 

@@ -11,23 +11,28 @@ enum const {
 	static let betamt = 5
 }
 
+enum Symbol: String, CaseIterable {
+	case apple = "apple"
+	case star = "star"
+	case cherry = "cherry"
+}
+
 class ViewModel: ObservableObject {
-	@Published var symbols = ["apple", "star", "cherry"]
+	@Published var symbols = Symbol.allCases
 	@Published var numbers = Array(repeating: 0, count: 9)
-	@Published var credits = 1000
 	@Published var backgrounds = Array(repeating: Color.white, count: 9)
+	@Published var credits = 1000
+	@Published var win = false
 	
 	func processResults(_ isMax: Bool = false) {
 		// update bg white
-		backgrounds = backgrounds.map { _ in
-			Color.white
-		}
+		backgrounds = backgrounds.map { _ in .white }
 		
 		if isMax {
 			// spin all
-			numbers = numbers.map({ _ in
+			numbers = numbers.map { _ in
 				Int.random(in: 0...symbols.count - 1)
-			})
+			}
 		} else {
 			// spin only mid
 			numbers[3] = Int.random(in: 0...symbols.count - 1)
@@ -39,7 +44,7 @@ class ViewModel: ObservableObject {
 		processWin(isMax)
 	}
 	
-	func processWin(_ isMax: Bool = false) {
+	private func processWin(_ isMax: Bool = false) {
 		var matches = 0
 		
 		if !isMax {
@@ -76,12 +81,14 @@ class ViewModel: ObservableObject {
 			if isMatch(2, 4, 6) { matches += 1 }
 			// right side
 			if isMatch(0, 4, 8) { matches += 1 }
-			
 		}
+
+		win = false
 		
 		if matches > 0 {
 			// at leat 1 win
 			credits += const.betamt * matches * 2
+			win = true
 		} else if !isMax {
 			// 0 win, single spin
 			credits -= const.betamt
@@ -91,15 +98,13 @@ class ViewModel: ObservableObject {
 		}
 	}
 	
-	func isMatch(_ index1:Int,_ index2:Int,_ index3:Int) -> Bool {
-		if numbers[index1] == numbers[index2] && numbers[index2] == numbers[index3] {
-			// update bg green
-			backgrounds[index1] = Color.green
-			backgrounds[index2] = Color.green
-			backgrounds[index3] = Color.green
-			return true
-		}
-		
-		return false
+	private func isMatch(_ index1: Int,_ index2: Int,_ index3: Int) -> Bool {
+		guard numbers[index1] == numbers[index2] && numbers[index2] == numbers[index3] else { return false }
+
+		// update bg green
+		backgrounds[index1] = .green
+		backgrounds[index2] = .green
+		backgrounds[index3] = .green
+		return true
 	}
 }
